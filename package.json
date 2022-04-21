@@ -6,72 +6,18 @@
     "packages": [
       "packages/*",
       "apps/*",
+      "libs",
       "wrappers/*"
-    ],
-    "nohoist": [
-      "**/react-native",
-      "**/react-native/**",
-      "**/@react-native-*",
-      "**/@react-native-*/**",
-      "**/react-native-*",
-      "**/react-native-*/**",
-      "**/*react-navigation/native*",
-      "**/*react-navigation/native*/**",
-      "**/expo",
-      "**/expo/**",
-      "**/@expo",
-      "**/@expo/**",
-      "**/expo-*",
-      "**/expo-*/**",
-      "**/metro-*",
-      "**/metro-*/**"
     ]
   },
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --no-cache --parallel --continue",
-    "lint": "turbo run lint",
-    "test": "turbo run test",
-    "clean": "yarn clean:turbo && yarn clean:watchman",
-    "clean:turbo": "yarn turbo run clean && rm -rf node_modules",
-    "clean:watchman": "watchman watch-del-all && yarn cache clean"
+  "resolutions": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-native": "0.64.3",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-reanimated": "2.3.3",
+    "typescript": "4.6.3"
   },
-  "devDependencies": {
-    "prettier": "^2.5.1",
-    "turbo": "latest"
-  },
-  "turbo": {
-    "baseBranch": "origin/master",
-    "pipeline": {
-      "build": {
-        "outputs": [
-          "dist/**",
-          ".next/**",
-          "public/dist/**"
-        ],
-        "dependsOn": [
-          "^build"
-        ]
-      },
-      "test": {
-        "dependsOn": [
-          "^build"
-        ],
-        "outputs": [
-          "coverage/**"
-        ]
-      },
-      "lint": {
-        "outputs": []
-      },
-      "clean": {
-        "outputs": []
-      },
-      "dev": {
-        "cache": false
-      }
-    }
-,
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --no-cache --parallel --continue",
@@ -83,5 +29,6 @@
   },
   "devDependencies": {
     "turbo": "^1.2.5"
-  }
+  },
+  "packageManager": "yarn@3.1.1"
 }
