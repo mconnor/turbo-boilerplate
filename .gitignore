@@ -17,6 +17,7 @@ dist
 build/**
 dist/**
 .next/**
+public/dist/**
 
 # misc
 .DS_Store
