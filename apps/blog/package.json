@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "name": "blog",
   "scripts": {
+    "lint": "yarn my:lint",
+    "fix": "yarn my:fix",
     "build": "remix build",
     "dev": "remix dev",
     "postinstall": "remix setup node",

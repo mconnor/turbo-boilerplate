@@ -8,7 +8,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest -u",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint": "yarn my:lint",
+    "fix": "yarn my:fix",
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
@@ -16,7 +17,7 @@
     "@react-navigation/native-stack": "^6.2.5",
     "bp-request": "*",
     "react": "17.0.2",
-    "react-native": "0.66.4",
+    "react-native": "0.64.3",
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.10.1",
     "ui-native": "*"
@@ -39,7 +40,7 @@
   },
   "resolutions": {
     "@types/react": "^17",
-    "react-native": "0.66.4",
+    "react-native": "0.64.3",
     "react": "17.0.2"
   }
 }

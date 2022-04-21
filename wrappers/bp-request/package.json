@@ -14,7 +14,8 @@
     "test": "jest -u",
     "build": "tsup src/index.ts --format esm,cjs --dts --external axios",
     "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external axios",
-    "lint": "TIMING=1 eslint src --fix",
+    "lint": "turbo my:lint",
+    "fix": "turbo my:fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "devDependencies": {

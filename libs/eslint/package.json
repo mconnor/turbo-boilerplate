@@ -1,0 +1,39 @@
+{
+  "name": "@hybrid-app/eslint-config",
+  "version": "1.0.0",
+  "description": "eslint configuration for React Native",
+  "author": "Mike Connor <mike@mikeconnor.tech>",
+  "license": "MIT",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Nothing to build'",
+    "test": "echo 'Nothing to test'",
+    "my:lint": "cd $INIT_CWD && eslint --ext js,ts,tsx .",
+    "my:fix": "cd $INIT_CWD && eslint --ext js,ts,tsx . --fix",
+    "fix": "echo 'Nothing to fix'",
+    "doctor": "echo 'Nothing to doctor'"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/node": "^17.0.23",
+    "@types/prettier": "^2.4.4",
+    "@types/react-native": "~0.64.12",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^16.2.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-universe": "^11.0.0-beta.0",
+    "eslint-plugin-graphql": "^4.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "prettier": "2.6.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}
