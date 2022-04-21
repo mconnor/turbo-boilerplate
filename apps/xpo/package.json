@@ -1,7 +1,13 @@
 {
   "name": "xpo",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "index.js",
+  "eslintConfig": {
+    "extends": "@hybrid-app/eslint-config",
+    "ignorePatterns": [
+      "__generated__"
+    ]
+  },
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -15,6 +21,7 @@
     "@react-navigation/native-stack": "^6.6.1",
     "bp-request": "*",
     "expo": "^44.0.0",
+    "expo-dev-client": "~0.8.4",
     "expo-status-bar": "~1.2.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
@@ -26,9 +33,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@hybrid-app/eslint-config": "workspace:*",
     "@types/react": "~17.0.21",
     "@types/react-native": "~0.64.12",
-    "config": "*",
     "typescript": "~4.3.5"
   },
   "private": true
