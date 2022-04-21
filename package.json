@@ -49,10 +49,14 @@
           ".next/**",
           "public/dist/**"
         ],
-        "dependsOn": ["^build"]
+        "dependsOn": [
+          "^build"
+        ]
       },
       "test": {
-        "dependsOn": ["^build"],
+        "dependsOn": [
+          "^build"
+        ],
         "outputs": [
           "coverage/**"
         ]
