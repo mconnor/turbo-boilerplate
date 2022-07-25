@@ -1,36 +1,38 @@
 {
-  "name": "turbo-boilerplate",
-  "version": "0.2.1",
-  "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*",
-      "apps/*",
-      "libs/*",
-      "wrappers/*"
-    ]
-  },
-  "resolutions": {
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-native": "0.68.2",
-    "react-native-safe-area-context": "4.2.4",
-    "react-native-reanimated": "2.3.3"
-  },
-  "scripts": {
-    "start": "yarn workspace xpo start",
-    "doctor": "yarn workspace xpo doctor",
-    "clear": "./scripts/clear.sh",
-    "build": "turbo run build",
-    "dev": "turbo run dev --no-cache --parallel --continue",
-    "lint": "turbo run lint",
-    "test": "turbo run test",
-    "clean": "yarn clean:turbo && yarn clean:watchman",
-    "clean:turbo": "yarn turbo run clean && rm -rf node_modules",
-    "clean:watchman": "watchman watch-del-all && yarn cache clean"
-  },
-  "devDependencies": {
-    "turbo": "^1.2.5"
-  },
-  "packageManager": "yarn@3.2.1"
+    "name": "turbo-boilerplate",
+    "version": "0.2.1",
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "packages/*",
+            "apps/*",
+            "libs/*",
+            "wrappers/*"
+        ]
+    },
+    "resolutions": {
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-native": "0.68.2",
+        "react-native-safe-area-context": "4.2.4"
+    },
+    "scripts": {
+        "start": "yarn workspace xpo start",
+        "doctor": "yarn workspace xpo doctor",
+        "clear": "./scripts/clear.sh",
+        "build": "turbo run build",
+        "dev": "turbo run dev --no-cache --parallel --continue",
+        "lint": "turbo run lint",
+        "test": "turbo run test",
+        "clean": "yarn clean:turbo && yarn clean:watchman",
+        "clean:turbo": "yarn turbo run clean && rm -rf node_modules",
+        "clean:watchman": "watchman watch-del-all && yarn cache clean"
+    },
+    "devDependencies": {
+        "turbo": "^1.2.5"
+    },
+    "packageManager": "yarn@3.2.1",
+    "engines": {
+        "node": ">14.19.1<17"
+    }
 }
