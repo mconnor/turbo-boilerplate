@@ -18,6 +18,7 @@
     "react-native-reanimated": "2.3.3"
   },
   "scripts": {
+    "start": "yarn workspace xpo start",
     "doctor": "yarn workspace xpo doctor",
     "clear": "./scripts/clear.sh",
     "build": "turbo run build",
@@ -31,5 +32,5 @@
   "devDependencies": {
     "turbo": "^1.2.5"
   },
-  "packageManager": "yarn@3.1.1"
+  "packageManager": "yarn@3.2.1"
 }
