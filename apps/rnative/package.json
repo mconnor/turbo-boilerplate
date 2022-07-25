@@ -17,7 +17,7 @@
     "@react-navigation/native-stack": "^6.2.5",
     "bp-request": "*",
     "react": "17.0.2",
-    "react-native": "0.64.3",
+    "react-native": "0.69.3",
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.10.1",
     "ui-native": "*"
@@ -36,7 +36,7 @@
     "metro-react-native-babel-preset": "^0.66.2",
     "metro-resolver": "^0.66.2",
     "react-test-renderer": "17.0.2",
-    "typescript": "^4.4.4"
+    "typescript": "^4.7.4"
   },
   "resolutions": {
     "@types/react": "^17",
